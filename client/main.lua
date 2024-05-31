@@ -30,7 +30,7 @@ function RageUI.PoolMenus:SoundPlayer()
 		    	if onSelected then
 		    		Citizen.CreateThread(function()
 		    			Citizen.Wait(200)
-		    			PlaySoundFromCoord(1, sound.AudioName, GetEntityCoords(PlayerPedId()), sound.AudioRef, Config.IsNetwork, Config.Range, false)
+		    			PlaySoundFromCoord(1, sound.AudioName, GetEntityCoords(PlayerPedId()), sound.AudioRef == "0" and tonumber(sound.AudioRef) or sound.AudioRef , Config.IsNetwork, Config.Range, false)
 		    		end)
 		    	end
 		    end, _)
