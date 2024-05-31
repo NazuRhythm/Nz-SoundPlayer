@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 games {"gta5"}
 
-author 'Nazu'
+author 'NazuRhythm'
 version '1.0.0'
 lua54 'yes'
 
